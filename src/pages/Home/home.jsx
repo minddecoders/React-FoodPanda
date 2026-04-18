@@ -1,4 +1,7 @@
 import style from './home.module.css';
+import image from'../../assets/image.png';
+import pizza from'../../assets/pizza.jpeg';
+
 function Home(){
     return(
 
@@ -6,7 +9,7 @@ function Home(){
       <div className={style.card}>
         
         <img 
-          src="\src\assets\image.png"
+          src={image}
           alt={style.card} 
           className={style.img}
         />
@@ -25,7 +28,7 @@ function Home(){
 
           <div className={style.author}>
             <img 
-              src="\src\assets\pizza.jpeg" 
+              src={pizza} 
               alt="author"
             />
             <span>Greg Hooper</span>
