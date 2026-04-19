@@ -1,7 +1,8 @@
-import Home from "./pages/Home/home.jsx";
+import Card from "./pages/Home/home.jsx";
+
 function App() {
   return (
-   <Home/>
+   <Card/>
   )
 }
 export default App;

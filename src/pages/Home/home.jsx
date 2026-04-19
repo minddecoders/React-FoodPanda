@@ -1,44 +1,13 @@
-import style from './home.module.css';
-import image from'../../assets/image.png';
-import pizza from'../../assets/pizza.jpeg';
-
-function Home(){
-    return(
-
-    <div className={style.container}>
-      <div className={style.card}>
-        
-        <img 
-          src={image}
-          alt={style.card} 
-          className={style.img}
-        />
-
-        <div className={style.content}>
-          <span className={style.tag}>Learning</span>
-
-          <p className={style.date}>Published 21 Dec 2023</p>
-
-          <h2>HTML & CSS foundations</h2>
-
-          <p className={style.desc}>
-            These languages are the backbone of every website, defining structure,
-            content, and presentation.
-          </p>
-
-          <div className={style.author}>
-            <img 
-              src={pizza} 
-              alt="author"
-            />
-            <span>Greg Hooper</span>
-          </div>
-
-        </div>
-
-      </div>
+import style from './home.module.css'
+import qrImag from'../../assets/image.png'
+export default function Card() {
+  return (
+    <div className={style.card}>
+      <img src={qrImag} />
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
     </div>
   );
 }
-
-export default Home;
